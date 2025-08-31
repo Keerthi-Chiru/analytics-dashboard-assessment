@@ -17,9 +17,9 @@ export default function KPIGrid({ totalEVs, byType = [], avgRange, cafvShare }) 
         <div className="text-xs  ">Avg range</div>
         <div className="text-xl font-bold">{avgRange ? `${Math.round(avgRange)} mi` : '—'}</div>
       </div>
-      <div className="p-4 bg-black rounded shadow hover:scale-105 transition">
-        <div className="text-xs  ">CAFV eligible</div>
-        <div className="text-xl font-bold">{cafvShare != null ? `${Math.round(cafvShare * 100)}%` : 'N/A'}</div>
+      <div className="p-4 bg-black rounded shadow hover:scale-105 transition" title='CAFV (Clean Vehicle Rebate Foundation) eligibility indicates the percentage of vehicles qualifying for government incentive rebates.'>
+        <div className="text-xs" >CAFV eligible</div>
+        <div className="text-xl font-bold" >{cafvShare != null ? `${Math.round(cafvShare * 100)}%` : 'N/A'}</div>
       </div>
     </div>
   )
