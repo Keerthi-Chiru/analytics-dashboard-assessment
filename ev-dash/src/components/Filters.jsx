@@ -26,7 +26,7 @@ export default function Filters(props){
 
       <div>
         <div className="text-xs text-[#fbcd10]">Make</div>
-        <select value={makeFilter} onChange={e=>setMakeFilter(e.target.value)} className="w-full border rounded px-2 py-1 mt-1 bg-black">
+        <select value={makeFilter} onChange={e=>setMakeFilter(e.target.value)} className="w-full border rounded px-2 py-1 mt-1 bg-black ">
           {makes.map(m=> <option key={m} value={m}>{m}</option>)}
         </select>
       </div>

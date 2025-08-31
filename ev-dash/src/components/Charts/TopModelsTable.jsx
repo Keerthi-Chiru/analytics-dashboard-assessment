@@ -3,7 +3,7 @@ import React from 'react'
 export default function TopModelsTable({ data = [] }) {
   return (
     <div className="overflow-auto">
-      <table className="min-w-full text-sm">
+      <table className="min-w-full text-sm text-[#fbcd10]">
         <thead>
           <tr className="border-b">
             <th className="text-left p-2">#</th>
@@ -13,7 +13,7 @@ export default function TopModelsTable({ data = [] }) {
         </thead>
         <tbody>
           {data.map((r, i) => (
-            <tr key={r.key || i} className="border-b hover:bg-gray-50">
+            <tr key={r.key || i} className="border-b hover:bg-[#fbcd10]/25">
               <td className="p-2">{i + 1}</td>
               <td className="p-2">{r.key}</td>
               <td className="p-2 text-right">{r.value.toLocaleString()}</td>
