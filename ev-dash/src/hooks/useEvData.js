@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react'
 import Papa from 'papaparse'
 import { findCol, toInt, toNum, countBy, topN, binBy, avg } from '../utils/cols'
 
-const CSV_URL = '/public/Electric_Vehicle_Population_Data.csv' // ensure this file exists in /public
+const CSV_URL = '/Electric_Vehicle_Population_Data.csv' 
 
 export default function useEvData() {
   const [rows, setRows] = useState([])
